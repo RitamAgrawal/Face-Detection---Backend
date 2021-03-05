@@ -11,7 +11,7 @@ import image from "./controllers/image.js ";
 const db = knex({
   client: "pg",
   connection: {
-    host: "127.0.0.1",
+    host: "postgresql-convex-52294",
     user: "ritam",
     password: "",
     database: "face_detection_db",
