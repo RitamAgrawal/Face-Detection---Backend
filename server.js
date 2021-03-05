@@ -11,10 +11,8 @@ import image from "./controllers/image.js ";
 const db = knex({
   client: "pg",
   connection: {
-    host: "postgresql-convex-52294",
-    user: "ritam",
-    password: "",
-    database: "face_detection_db",
+    host: process.env.DATABASE_URL,
+    ssl: true,
   },
 });
 
